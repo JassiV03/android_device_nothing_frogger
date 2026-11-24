@@ -7,13 +7,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/nothing/frogger/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 PRODUCT_BRAND := Nothing
 PRODUCT_DEVICE := frogger
 PRODUCT_MANUFACTURER := Nothing
 PRODUCT_MODEL := A069
-PRODUCT_NAME := lineage_frogger
+PRODUCT_NAME := infinity_frogger
 
 PRODUCT_GMS_CLIENTID_BASE := android-nothing
 
@@ -25,3 +25,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=Frogger \
     SystemDevice=Frogger \
     SystemName=Frogger
+
+INFINITY_MAINTAINER := "JassiV"
+TARGET_HAS_UDFPS := true
+INFINITY_BUILD_TYPE := OFFICIAL
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_SUPPORTS_BLUR := true

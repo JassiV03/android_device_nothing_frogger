@@ -46,3 +46,8 @@ ro.vendor.qti.va_aosp.support=1
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=26,26
 telephony.lteOnCdmaDevice=1
+
+# Example Defintions
+ro.product.marketname=Nothing Phone (4a)
+ro.infinity.soc=Snapdragon 7s Gen 4
+ro.infinity.camera=50MP + 50MP + 8MP
